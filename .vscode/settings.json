@@ -1,0 +1,35 @@
+{
+    "search.exclude": {
+        ".output": true,
+        ".temp": true
+    },
+    //-------- Whitespace trimming --------
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    //-------- Editor indentation --------
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    //-------- Editor font --------
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.4,
+    //-------- PowerShell code-formatting --------
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.ignoreOneLineBlock": false,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
+    "powershell.codeFormatting.preset": "OTBS",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    //-------- PowerShell Configuration --------
+    "powershell.debugging.createTemporaryIntegratedConsole": true,
+    "powershell.integratedConsole.forceClearScrollbackBuffer": true,
+    "powershell.scriptAnalysis.settingsPath": "./Settings.ScriptAnalyzer.psd1",
+    //-------- Language configuration --------
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[xml]": {
+        "editor.tabSize": 2
+    }
+}

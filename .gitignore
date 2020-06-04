@@ -1,12 +1,7 @@
 # (IDE) temp folders
 .vs/
-.int/
-.out/
-
-# Ignore PSDepend installed build modules dependencies.
-build/dependencies/PSDepend/*
-!build/dependencies/PSDepend/README.md
-!build/dependencies/PSDepend/build.depend.psd1
+_int/
+_out/
 
 # Files containing (signing) keys
 *.pfx

@@ -1,0 +1,120 @@
+{
+    // tasks.json format docs @ https://go.microsoft.com/fwlink/?LinkId=733558
+    "version": "2.0.0",
+    // Start pwsh
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "pwsh.exe",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-Command"
+                ]
+            }
+        }
+    },
+    "linux": {
+        "options": {
+            "shell": {
+                "executable": "/usr/bin/pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-Command"
+                ]
+            }
+        }
+    },
+    "osx": {
+        "options": {
+            "shell": {
+                "executable": "/usr/local/bin/pwsh",
+                "args": [
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-Command"
+                ]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "Default",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "Invoke-Build -Task Default -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Analyze",
+            "type": "shell",
+            "command": "Invoke-Build -Task Analyze -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "Invoke-Build -Task Build -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "Invoke-Build -Task Clean -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Helpify",
+            "type": "shell",
+            "command": "Invoke-Build -Task Helpify -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Install",
+            "type": "shell",
+            "command": "Invoke-Build -Task Install -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "Invoke-Build -Task Test -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Uninstall",
+            "type": "shell",
+            "command": "Invoke-Build -Task Uninstall -File './build/module.ps1'",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "?",
+            "type": "shell",
+            "command": "Invoke-Build -Task ? -File './build/module.ps1'",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -4,13 +4,7 @@ Just chuck all your photos in the soup and let it simmer for a bit...
 
 ## Description
 
-Managing large volumes of visual files (photo and video) through PowerShell.
-
-Starts with indexing the files found in the specified folders (and extensions)
-The index contains both meta-information (e.g DateTaken & GPS coordinates) as well as
-visual-information (e.g. histogram, Compact Composite Descriptors, MPEG-7 Descriptors)
-
-Using the index allows for searching, deduplication, transformation, feature classification.
+Indexes large volumes of photos to enable querying, reporting, deduplicating, transforming, feature classification
 
 ## Requirements
 
@@ -36,4 +30,4 @@ This module is tested with the PowerShell testing framework Pester. To run all t
 
 **Author:** RapTapApp
 
-[**Website:**](https://github.com/RapTapApp/PhotoSoup)
+[**Source:** Github](https://github.com/RapTapApp/PhotoSoup)
